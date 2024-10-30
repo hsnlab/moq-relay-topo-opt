@@ -1,0 +1,15 @@
+first_hop_relay:
+  - relayid: "node1"
+    track: "bbb-720-30_1000"
+last_hop_relay:
+  - relayid: "node1"
+    track: "bbb-720-30_1000"
+
+nodes:
+  - name: "node1"
+    location:
+      - 40.7128
+      - -74.0060
+
+
+edges:
