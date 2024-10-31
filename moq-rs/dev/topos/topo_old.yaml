@@ -1,0 +1,7 @@
+nodes:
+  - relay1
+  - relay2
+
+edges:
+  - - relay1
+    - relay2
