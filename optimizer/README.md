@@ -7,7 +7,7 @@ This project is strongly related to [1majom's moq-rs fork](https://github.com/1m
 
 When using Docker Compose for development, it's useful to just simply link the required .env to the sample environment file provided: `ln -s example.env .env`
 
-## Run
+## Run (API)
 
 Note that the [requirements.txt](requirements.txt) and this [section](#run) only considers the running of the API and its testbed.
 
@@ -34,3 +34,10 @@ After acquiring an image, run a container instance of it:
    * You can deactivate it later by running the command: `deactivate`
  * Install dependencies: `pip install -r requirements.txt`
  * Run the script: `python -m fastapi run app/api.py --port 80`
+
+
+## Run (benchmark)
+
+The easiest way to run the simulation benchmark is to run [run-benchmark.sh](runbenchmark.sh), however, it only works on Unix based systems.
+
+On Windows, after setting up the environment according to the [guide](#locally) above, run the [benchmark.py](app/benchmark.py) file with the Python installation of the (virtual) environment.

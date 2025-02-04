@@ -108,7 +108,7 @@ if __name__ == "__main__":
     parser.add_argument("--use-cache",
                         action="store_true", default=False, help="Cache the results (using the input data as a key)")
     parser.add_argument("--single-track-optimizer",
-                        choices=[opt.name for opt in SingleTrackOptimizerType], default=SingleTrackOptimizerType.MULTICAST_HEURISTIC.name,
+                        choices=[opt.name for opt in SingleTrackOptimizerType], default=SingleTrackOptimizerType.INTEGER_LINEAR_PROGRAMMING.name,
                         help="Single track optimizer to use (ignored if multi-track optimizer is not set to ADAPTED)")
     parser.add_argument("--multi-track-optimizer",
                         choices=[opt.name for opt in MultiTrackOptimizerType], default=MultiTrackOptimizerType.ADAPTED.name, help="Multi track optimizer to use")
