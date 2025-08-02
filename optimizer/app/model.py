@@ -145,7 +145,7 @@ def display_triangle_inequality_satisfaction(network: nx.DiGraph):
                     cost_triangle_inequality_satisfied += 1
                 else:
                     print(f"{start_node} -> {intermediate_node} -> {end_node}")
-                    print(f"\t[C]: FAIL {cost1} + {cost2} < {cost_direct}")
+                    print(f"\t[C]: FAIL {cost1} + {cost2} <= {cost_direct}")
 
                 latency1 = network.get_edge_data(start_node, intermediate_node)["latency"]
                 latency2 = network.get_edge_data(intermediate_node, end_node)["latency"]
